@@ -19,6 +19,7 @@ import java.util.Scanner;
 public class Principal {
     public static void main(String args[]) throws IOException {
         Scanner in = new Scanner(System.in);
+        System.out.println("Introduzca el nombre del archivo de texto que contine la gramática");
         String path = in.nextLine();
         String archivo = '"' + path + '"';
         FileReader fileReader = new FileReader(archivo);
