@@ -24,5 +24,14 @@ public class Principal {
         String archivo = '"' + path + '"';
         FileReader fileReader = new FileReader(archivo);
         BufferedReader br = new BufferedReader(fileReader);
+        //Lee todas las producciones
+        //Una vez guardadas inicia el analsis sintáctico descendente
+        //Se busca que una vez construida la cadena se almacene en un nodo
+        //para hacer los pasos recursivos, se pone una condicion para el primer
+        //simbolo no terminal de la cadena, el cual se sustituye por cada una
+        //de las producciones correspondientes, esto se puede hacer gracias a 
+        //que en las clase produccion existe un simbolo no terminal con el cual
+        //se compara el primer no terminal de la cadena con la cual estamos
+        //trabajando.
     }
 }
